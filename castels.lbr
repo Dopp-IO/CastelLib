@@ -170,38 +170,38 @@
 <symbol name="32U4CASTEL">
 <pin name="GND" x="-2.54" y="2.54" visible="pin" length="short"/>
 <pin name="VCC" x="-2.54" y="5.08" visible="pin" length="short"/>
-<pin name="A0" x="-2.54" y="10.16" visible="pin" length="short"/>
-<pin name="A1" x="-2.54" y="12.7" visible="pin" length="short"/>
-<pin name="A2" x="-2.54" y="15.24" visible="pin" length="short"/>
-<pin name="A3" x="-2.54" y="17.78" visible="pin" length="short"/>
-<pin name="A4" x="-2.54" y="20.32" visible="pin" length="short"/>
-<pin name="A5" x="-2.54" y="22.86" visible="pin" length="short"/>
-<pin name="D2" x="22.86" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="D3" x="22.86" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="D4" x="22.86" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="D5" x="22.86" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="D6" x="22.86" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="D7" x="22.86" y="15.24" visible="pin" length="short" rot="R180"/>
-<pin name="D8" x="22.86" y="17.78" visible="pin" length="short" rot="R180"/>
-<pin name="D9" x="22.86" y="20.32" visible="pin" length="short" rot="R180"/>
-<pin name="D10" x="22.86" y="22.86" visible="pin" length="short" rot="R180"/>
-<pin name="D11" x="22.86" y="25.4" visible="pin" length="short" rot="R180"/>
-<pin name="D12" x="22.86" y="27.94" visible="pin" length="short" rot="R180"/>
-<pin name="D13" x="22.86" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="A0/PF7" x="-2.54" y="10.16" visible="pin" length="short"/>
+<pin name="A1/PF6" x="-2.54" y="12.7" visible="pin" length="short"/>
+<pin name="A2/PF5" x="-2.54" y="15.24" visible="pin" length="short"/>
+<pin name="A3/PF4" x="-2.54" y="17.78" visible="pin" length="short"/>
+<pin name="A4/PF1" x="-2.54" y="20.32" visible="pin" length="short"/>
+<pin name="A5/PF0" x="-2.54" y="22.86" visible="pin" length="short"/>
+<pin name="D2/SDA/PD1" x="27.94" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="D3/SCL/PD0" x="27.94" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PD4/D4" x="27.94" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PC6/D5" x="27.94" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PD7/D6" x="27.94" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PE6/D7" x="27.94" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PB4/D8" x="27.94" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PB5/D9" x="27.94" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="PB6/D10" x="27.94" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="PB7/D11" x="27.94" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="PD6/D12" x="27.94" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="PC7/D13" x="27.94" y="30.48" visible="pin" length="short" rot="R180"/>
 <pin name="D-" x="-2.54" y="27.94" visible="pin" length="short"/>
 <pin name="D+" x="-2.54" y="30.48" visible="pin" length="short"/>
-<pin name="RXI" x="-2.54" y="35.56" visible="pin" length="short"/>
-<pin name="TXO" x="-2.54" y="38.1" visible="pin" length="short"/>
-<pin name="MISO" x="22.86" y="35.56" visible="pin" length="short" rot="R180"/>
-<pin name="MOSI" x="22.86" y="38.1" visible="pin" length="short" rot="R180"/>
-<pin name="SCK" x="22.86" y="40.64" visible="pin" length="short" rot="R180"/>
-<pin name="RST" x="22.86" y="43.18" visible="pin" length="short" rot="R180"/>
+<pin name="RXI/PD2" x="-2.54" y="35.56" visible="pin" length="short"/>
+<pin name="TXO/PD3" x="-2.54" y="38.1" visible="pin" length="short"/>
+<pin name="PB3/MISO" x="27.94" y="35.56" visible="pin" length="short" rot="R180"/>
+<pin name="PB2/MOSI" x="27.94" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="PB1/SCK" x="27.94" y="40.64" visible="pin" length="short" rot="R180"/>
+<pin name="RST" x="27.94" y="43.18" visible="pin" length="short" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="45.72" width="0.254" layer="94"/>
-<wire x1="0" y1="45.72" x2="20.32" y2="45.72" width="0.254" layer="94"/>
-<wire x1="20.32" y1="45.72" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="10.16" y="49.53" size="1.27" layer="94" font="vector" align="center">&gt;NAME</text>
-<text x="10.16" y="46.99" size="1.27" layer="94" font="vector" align="center">32U4CASTEL</text>
+<wire x1="0" y1="45.72" x2="25.4" y2="45.72" width="0.254" layer="94"/>
+<wire x1="25.4" y1="45.72" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="12.7" y="49.53" size="1.27" layer="94" font="vector" align="center">&gt;NAME</text>
+<text x="12.7" y="46.99" size="1.27" layer="94" font="vector" align="center">32U4CASTEL</text>
 </symbol>
 <symbol name="POWERCASTEL">
 <pin name="GND" x="-2.54" y="2.54" visible="pin" length="short"/>
@@ -267,33 +267,33 @@
 <devices>
 <device name="" package="32U4CASTEL">
 <connects>
-<connect gate="U1" pin="A0" pad="A0"/>
-<connect gate="U1" pin="A1" pad="A1"/>
-<connect gate="U1" pin="A2" pad="A2"/>
-<connect gate="U1" pin="A3" pad="A3"/>
-<connect gate="U1" pin="A4" pad="A4"/>
-<connect gate="U1" pin="A5" pad="A5"/>
+<connect gate="U1" pin="A0/PF7" pad="A0"/>
+<connect gate="U1" pin="A1/PF6" pad="A1"/>
+<connect gate="U1" pin="A2/PF5" pad="A2"/>
+<connect gate="U1" pin="A3/PF4" pad="A3"/>
+<connect gate="U1" pin="A4/PF1" pad="A4"/>
+<connect gate="U1" pin="A5/PF0" pad="A5"/>
 <connect gate="U1" pin="D+" pad="D+"/>
 <connect gate="U1" pin="D-" pad="D-"/>
-<connect gate="U1" pin="D10" pad="10"/>
-<connect gate="U1" pin="D11" pad="11"/>
-<connect gate="U1" pin="D12" pad="12"/>
-<connect gate="U1" pin="D13" pad="13"/>
-<connect gate="U1" pin="D2" pad="2"/>
-<connect gate="U1" pin="D3" pad="3"/>
-<connect gate="U1" pin="D4" pad="4"/>
-<connect gate="U1" pin="D5" pad="5"/>
-<connect gate="U1" pin="D6" pad="6"/>
-<connect gate="U1" pin="D7" pad="7"/>
-<connect gate="U1" pin="D8" pad="8"/>
-<connect gate="U1" pin="D9" pad="9"/>
+<connect gate="U1" pin="D2/SDA/PD1" pad="2"/>
+<connect gate="U1" pin="D3/SCL/PD0" pad="3"/>
 <connect gate="U1" pin="GND" pad="GND@21 GND@22 GND@29"/>
-<connect gate="U1" pin="MISO" pad="MISO"/>
-<connect gate="U1" pin="MOSI" pad="MOSI"/>
+<connect gate="U1" pin="PB1/SCK" pad="SCK"/>
+<connect gate="U1" pin="PB2/MOSI" pad="MOSI"/>
+<connect gate="U1" pin="PB3/MISO" pad="MISO"/>
+<connect gate="U1" pin="PB4/D8" pad="8"/>
+<connect gate="U1" pin="PB5/D9" pad="9"/>
+<connect gate="U1" pin="PB6/D10" pad="10"/>
+<connect gate="U1" pin="PB7/D11" pad="11"/>
+<connect gate="U1" pin="PC6/D5" pad="5"/>
+<connect gate="U1" pin="PC7/D13" pad="13"/>
+<connect gate="U1" pin="PD4/D4" pad="4"/>
+<connect gate="U1" pin="PD6/D12" pad="12"/>
+<connect gate="U1" pin="PD7/D6" pad="6"/>
+<connect gate="U1" pin="PE6/D7" pad="7"/>
 <connect gate="U1" pin="RST" pad="RST"/>
-<connect gate="U1" pin="RXI" pad="RX"/>
-<connect gate="U1" pin="SCK" pad="SCK"/>
-<connect gate="U1" pin="TXO" pad="TX"/>
+<connect gate="U1" pin="RXI/PD2" pad="RX"/>
+<connect gate="U1" pin="TXO/PD3" pad="TX"/>
 <connect gate="U1" pin="VCC" pad="VCC@1 VCC@2 VCC@32"/>
 </connects>
 <technologies>
