@@ -323,6 +323,7 @@
 <connect gate="U1" pin="D2/SDA/PD1" pad="2"/>
 <connect gate="U1" pin="D3/SCL/PD0" pad="3"/>
 <connect gate="U1" pin="GND" pad="GND@21 GND@22 GND@29"/>
+<connect gate="U1" pin="PB0/D14" pad="14"/>
 <connect gate="U1" pin="PB1/SCK" pad="SCK"/>
 <connect gate="U1" pin="PB2/MOSI" pad="MOSI"/>
 <connect gate="U1" pin="PB3/MISO" pad="MISO"/>
