@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -119,24 +119,25 @@
 <rectangle x1="-12.3825" y1="10.4775" x2="-10.4775" y2="12.3825" layer="21"/>
 </package>
 <package name="POWERCASTEL">
-<wire x1="-12.065" y1="-5.715" x2="-12.065" y2="6.35" width="0.1524" layer="49"/>
-<wire x1="-12.065" y1="6.35" x2="12.065" y2="6.35" width="0.1524" layer="49"/>
-<wire x1="12.065" y1="6.35" x2="12.065" y2="-5.715" width="0.1524" layer="49"/>
-<wire x1="12.065" y1="-5.715" x2="-12.065" y2="-5.715" width="0.1524" layer="49"/>
-<smd name="ENABLE" x="-10.795" y="6.35" dx="1.905" dy="1.905" layer="1"/>
-<smd name="VBUS" x="-8.255" y="6.35" dx="1.905" dy="1.905" layer="1"/>
-<smd name="DONE" x="-8.255" y="-5.715" dx="1.905" dy="1.905" layer="1"/>
-<smd name="CHARGING" x="-5.715" y="-5.715" dx="1.905" dy="1.905" layer="1"/>
-<smd name="VLIPO" x="-0.635" y="6.35" dx="1.905" dy="1.905" layer="1"/>
-<smd name="GND@6" x="1.905" y="6.35" dx="1.905" dy="1.905" layer="1"/>
-<smd name="LBO" x="4.445" y="6.35" dx="1.905" dy="1.905" layer="1"/>
-<smd name="5.0V" x="6.985" y="6.35" dx="1.905" dy="1.905" layer="1"/>
-<smd name="GND@9" x="9.525" y="6.35" dx="1.905" dy="1.905" layer="1"/>
+<wire x1="-12.3825" y1="-5.9182" x2="-12.3825" y2="5.9182" width="0.1524" layer="49"/>
+<wire x1="-12.3825" y1="5.9182" x2="12.3825" y2="5.9182" width="0.1524" layer="49"/>
+<wire x1="12.3825" y1="5.9182" x2="12.3825" y2="-5.9182" width="0.1524" layer="49"/>
+<wire x1="12.3825" y1="-5.9182" x2="-12.3825" y2="-5.9182" width="0.1524" layer="49"/>
+<smd name="ENABLE" x="-2.2225" y="-5.9182" dx="1.905" dy="1.905" layer="1"/>
+<smd name="VBUS" x="-9.8425" y="-5.9182" dx="1.905" dy="1.905" layer="1"/>
+<smd name="DONE" x="-12.3825" y="-0.8382" dx="1.905" dy="1.905" layer="1"/>
+<smd name="CHARGING" x="-12.3825" y="-3.3782" dx="1.905" dy="1.905" layer="1"/>
+<smd name="VLIPO" x="-7.3025" y="-5.9182" dx="1.905" dy="1.905" layer="1"/>
+<smd name="LOW" x="-12.3825" y="-5.9182" dx="1.905" dy="1.905" layer="1"/>
+<smd name="5.0V" x="5.3975" y="-5.9182" dx="1.905" dy="1.905" layer="1"/>
+<smd name="GND" x="2.8575" y="-5.9182" dx="1.905" dy="1.905" layer="1"/>
 <text x="0" y="0" size="1.778" layer="21" font="vector" ratio="20" align="center">POWERCASTEL</text>
-<wire x1="-12.065" y1="6.35" x2="-12.065" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-12.065" y1="-5.715" x2="12.065" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="12.065" y1="-5.715" x2="12.065" y2="6.35" width="0.127" layer="21"/>
-<wire x1="12.065" y1="6.35" x2="-12.065" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-12.3825" y1="5.9182" x2="-12.3825" y2="-5.9182" width="0.127" layer="21"/>
+<wire x1="-12.3825" y1="-5.9182" x2="12.3825" y2="-5.9182" width="0.127" layer="21"/>
+<wire x1="12.3825" y1="-5.9182" x2="12.3825" y2="5.9182" width="0.127" layer="21"/>
+<wire x1="12.3825" y1="5.9182" x2="-12.3825" y2="5.9182" width="0.127" layer="21"/>
+<smd name="VBAT" x="-4.7625" y="-5.9182" dx="1.905" dy="1.905" layer="1"/>
+<smd name="LBO" x="0.3175" y="-5.9182" dx="1.905" dy="1.905" layer="1"/>
 </package>
 <package name="SOUNDCASTEL">
 <smd name="D+" x="-8.255" y="5.08" dx="1.905" dy="1.905" layer="1"/>
@@ -240,18 +241,20 @@
 <symbol name="POWERCASTEL">
 <pin name="GND" x="-2.54" y="2.54" visible="pin" length="short"/>
 <pin name="5.0V" x="-2.54" y="5.08" visible="pin" length="short"/>
-<pin name="EN" x="20.32" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="EN" x="20.32" y="12.7" visible="pin" length="short" rot="R180"/>
 <pin name="DONE" x="20.32" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="CHRG" x="20.32" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="LBO" x="20.32" y="12.7" visible="pin" length="short" rot="R180"/>
-<wire x1="0" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
-<wire x1="17.78" y1="15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
+<pin name="LBO" x="20.32" y="15.24" visible="pin" length="short" rot="R180"/>
+<wire x1="0" y1="17.78" x2="17.78" y2="17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
-<pin name="VBUS" x="-2.54" y="10.16" visible="pin" length="short"/>
-<pin name="VLIPO" x="-2.54" y="12.7" visible="pin" length="short"/>
-<text x="8.89" y="15.875" size="1.27" layer="94" font="vector" ratio="20" rot="R180" align="top-center">PowerCastel</text>
-<text x="8.89" y="17.78" size="1.27" layer="94" font="vector" ratio="20" rot="R180" align="top-center">&gt;NAME</text>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<pin name="VBUS" x="-2.54" y="12.7" visible="pin" length="short"/>
+<pin name="VLIPO" x="-2.54" y="15.24" visible="pin" length="short"/>
+<text x="8.89" y="18.415" size="1.27" layer="94" font="vector" ratio="20" rot="R180" align="top-center">PowerCastel</text>
+<text x="8.89" y="20.32" size="1.27" layer="94" font="vector" ratio="20" rot="R180" align="top-center">&gt;NAME</text>
+<pin name="LOW" x="20.32" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="VBAT" x="-2.54" y="10.16" visible="pin" length="short"/>
 </symbol>
 <symbol name="SOUNDCASTEL">
 <pin name="VCC" x="-2.54" y="5.08" visible="pin" length="short"/>
@@ -348,28 +351,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="POWERCASTEL">
-<gates>
-<gate name="U1" symbol="POWERCASTEL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="POWERCASTEL">
-<connects>
-<connect gate="U1" pin="5.0V" pad="5.0V"/>
-<connect gate="U1" pin="CHRG" pad="CHARGING"/>
-<connect gate="U1" pin="DONE" pad="DONE"/>
-<connect gate="U1" pin="EN" pad="ENABLE GND@9"/>
-<connect gate="U1" pin="GND" pad="GND@6"/>
-<connect gate="U1" pin="LBO" pad="LBO"/>
-<connect gate="U1" pin="VBUS" pad="VBUS"/>
-<connect gate="U1" pin="VLIPO" pad="VLIPO"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SOUNDCASTEL">
 <gates>
 <gate name="U1" symbol="SOUNDCASTEL" x="0" y="0"/>
@@ -431,6 +412,30 @@
 <connect gate="U1" pin="GND" pad="GND"/>
 <connect gate="U1" pin="OUT" pad="OUT"/>
 <connect gate="U1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWERCASTEL">
+<gates>
+<gate name="U1" symbol="POWERCASTEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWERCASTEL">
+<connects>
+<connect gate="U1" pin="5.0V" pad="5.0V"/>
+<connect gate="U1" pin="CHRG" pad="CHARGING"/>
+<connect gate="U1" pin="DONE" pad="DONE"/>
+<connect gate="U1" pin="EN" pad="ENABLE"/>
+<connect gate="U1" pin="GND" pad="GND"/>
+<connect gate="U1" pin="LBO" pad="LBO"/>
+<connect gate="U1" pin="LOW" pad="LOW"/>
+<connect gate="U1" pin="VBAT" pad="VBAT"/>
+<connect gate="U1" pin="VBUS" pad="VBUS"/>
+<connect gate="U1" pin="VLIPO" pad="VLIPO"/>
 </connects>
 <technologies>
 <technology name=""/>
